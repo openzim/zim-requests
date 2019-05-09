@@ -1,3 +1,12 @@
+---
+name: New ZIM Request
+about: Suggest a new ZIM creation
+title: 'New ZIM: '
+labels: NEW
+assignees: kelson42
+
+---
+
 *Please use the following format for a ZIM creation request…*
 
 - Website URL: http://xxx
