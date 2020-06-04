@@ -1,20 +1,19 @@
 ---
 name: New ZIM Request
 about: Suggest a new ZIM creation
-title: 'New ZIM: '
-labels: NEW
-assignees: kelson42
+title: 'New ZIM request: '
+labels: ''
+assignees: ''
 
 ---
 
-*Please use the following format for a ZIM creation request…*
+*Please use the following format for a ZIM creation request (and delete unnecessary information*
 
-- Website URL: http://xxx
-- License: **Copyrighted | CC-by-sa | Public domain | ...**
+- Website URL: https://xxx
+- License: **CC-by-sa | Public domain | ...** (do NOT request copyrighted material)
 - Desired ZIM Title: **My title**
-- Desired ZIM Description: **My description**
-- Desired ZIM Icon –png (URL or attach one): http://abc.com/icon.png
+- Desired ZIM Description: **Short description**
+- Desired ZIM Icon –png (URL or attach one): https://abc.com/icon.png
 - Language (ISO 639-3): **eng**
-- Desired Main Page (homepage): **n/a**
+- Desired Main Page (homepage, if different from website URL): **n/a**
 - Is this a MediaWiki?: **yes | no**
-- Articles List URL (mediawiki): **n/a**
