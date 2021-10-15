@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-*Please use the following format for a ZIM creation request (and delete unnecessary information*
+*Please use the following format for a ZIM creation request (and delete unnecessary information)*
 
 - Website URL: https://xxx
 - License: **CC-by-sa | Public domain | ...** (do NOT request copyrighted material)
