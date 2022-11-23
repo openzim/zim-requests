@@ -2,9 +2,9 @@
 Want a new ZIM file? Propose ZIM content improvements or fixes? Here you are!<br><br>
 
 To request a new zim file from a website you know click `Issues` on the top menu bar, and then on the green `New Issue` button.<br>
-In the new window, click on (Get Started): a pre-filled form will appear<br>
+In the new window, click on `Get Started`: a pre-filled form will appear<br>
 
-Write the title of your request (target website) in the title field, e.g. `New Zim Request: Examplepedia.com`<br>
+Write the title of your request (that is, the target website) in the title field, e.g. `Examplepedia.com`<br>
 
 Replace `Website URL: https://xxx` with the URL for the website you want to submit, e.g. `https://www.examplepedia.com`<br>
 You **must** clarify the License field, e.g. Creative Commons, Public domain, or any other licensing format. **Do NOT request copyrighted material**<br>
