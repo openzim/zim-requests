@@ -1,7 +1,9 @@
 # zim-requests<br>
 Want a new ZIM file? Propose ZIM content improvements or fixes? Here you are!<br><br>
 
-To request a new zim file from a website you know click `Issues` on the top menu bar, and then on the green `New Issue` button.<br>
+**To request a new zim file from a website you know** 
+
+Click `Issues` on the top menu bar, and then on the green `New Issue` button.<br>
 In the new window, click on `Get Started`: a pre-filled form will appear<br>
 
 Write the title of your request (that is, the target website) in the title field, e.g. `Examplepedia.com`<br>
@@ -17,3 +19,9 @@ Finally, indicate whether this is a mediawiki-based website or not.  <br>
 After submitting the issue, we will create the corresponding recipe on the <a href="https://farm.openzim.org/">zimfarm</a> and, if everything works then the zim file will automatically be added to the library (after 24-48 hours).  <br>
 
 In case the recipe didn't work, we will investigate and keep the recipe for later fixes so you needn't open an new request.  <br>
+
+**To flag an existing ZIM file**
+
+This may be needed if the format is wrong, info is missing, etc.
+
+Simply open an issue, ignore the default template, and describe what the problem is: which zim file name, and which plaform you have been triyng to open it on.
