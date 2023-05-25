@@ -12,7 +12,7 @@ assignees: ''
 - Website URL: https://xxx
 - License: **Creative Commons | Public domain | ...** (do NOT request copyrighted material)
 - Desired ZIM Title: **My title**
-- Desired ZIM Description: **Short description**
+- Desired ZIM Description: **Short description (80 characters or less)**
 - Desired ZIM Icon –png (URL or attach one): https://example.com/example_icon.png
-- Language (ISO 639-3): **eng**
+- Language (ISO 639-3): **abc**
 - Is this a MediaWiki?: **yes | no**
