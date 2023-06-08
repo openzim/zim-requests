@@ -24,4 +24,4 @@ In case the recipe didn't work, we will investigate and keep the recipe for late
 
 This may be needed if the format is wrong, info is missing, etc.
 
-Simply open an issue, ignore the default template, and describe what the problem is: which zim file name, and which plaform you have been triyng to open it on.
+Simply open an issue, ignore the default template, and describe what the problem is: which zim file name, and which platform you have been trying to open it on.
