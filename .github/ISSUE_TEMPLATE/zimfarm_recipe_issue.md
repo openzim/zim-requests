@@ -2,3 +2,68 @@ name: Zimfarm Recipe Issue
 about: To report an issue on a openZIM Zimfarm (farm.openzim.org) recipe
 title: '<recipe_name> is failing'
 labels: ["bug"]
+body:
+- type: input
+  id: recipe_url
+  attributes:
+    label: Recipe URL
+    description: The recipe which encountered a problem
+    placeholder: https://farm.openzim.org/pipeline/xxxx
+  validations:
+    required: true
+  - type: textarea
+  id: logs
+  attributes:
+    label: Last log lines
+    description: Report here the last log lines which probably indicates the problem encountered
+    render: true
+  validations:
+    required: true
+- type: dropdown
+  id: how_many
+  attributes:
+    label: How many times the recipe failed in a row?
+    options:
+      - Once
+      - Twice
+      - Many
+  validations:
+    required: true
+- type: dropdown
+  id: zims_produced
+  attributes:
+    label: How many ZIM have been produced before failure?
+    options:
+      - None
+      - One
+      - Two
+      - Many  
+  validations:
+    required: true
+- type: dropdown
+  id: action_done
+  attributes:
+    label: Which action did you undertake so far?
+    options:
+      - I have requested the recipe again to confirm failure
+      - I have disabled the recipe for now
+      - None, I recommend to wait for next run on periodic scheduling to confirm there is an issue
+      - None, I have no idea of what to do
+  validations:
+    required: true
+- type: dropdown
+  id: what_next
+  attributes:
+    label: What's next?
+    options:
+      - This can be fixed by content team
+      - This is an upstream scraper problem
+      - This is an upstream website problem
+      - I don't know
+  validations:
+    required: true
+- type: textarea
+  id: details
+  attributes:
+    label: More details
+    placeholder: Add here more details to share if needed
