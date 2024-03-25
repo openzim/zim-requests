@@ -11,7 +11,7 @@ body:
     placeholder: https://farm.openzim.org/pipeline/xxxx
   validations:
     required: true
-  - type: textarea
+- type: textarea
   id: logs
   attributes:
     label: Last log lines
