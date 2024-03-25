@@ -1,7 +1,7 @@
 name: Zimfarm Recipe Issue
 description: To report an issue on a openZIM Zimfarm (farm.openzim.org) recipe
 title: '<recipe_name> is failing'
-labels: ["bug"]
+labels: ["Bug"]
 body:
 - type: input
   id: recipe_url
