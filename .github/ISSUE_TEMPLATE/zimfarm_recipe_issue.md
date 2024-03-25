@@ -69,3 +69,4 @@ body:
   attributes:
     label: More details
     placeholder: Add here more details to share if needed
+---
