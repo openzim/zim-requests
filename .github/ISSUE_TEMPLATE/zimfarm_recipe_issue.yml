@@ -1,9 +1,7 @@
----
 name: Zimfarm Recipe Issue
-about: To report an issue on a openZIM Zimfarm (farm.openzim.org) recipe
+description: To report an issue on a openZIM Zimfarm (farm.openzim.org) recipe
 title: '<recipe_name> is failing'
-labels: 
- - bug
+labels: ["bug"]
 body:
 - type: input
   id: recipe_url
@@ -13,7 +11,7 @@ body:
     placeholder: https://farm.openzim.org/pipeline/xxxx
   validations:
     required: true
-  - type: textarea
+- type: textarea
   id: logs
   attributes:
     label: Last log lines
@@ -36,7 +34,7 @@ body:
   attributes:
     label: How many ZIM have been produced before failure?
     options:
-      - None
+      - Zero
       - One
       - Two
       - Many  
@@ -69,5 +67,3 @@ body:
   attributes:
     label: More details
     placeholder: Add here more details to share if needed
-
----
