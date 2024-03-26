@@ -48,7 +48,9 @@ body:
       - I have requested the recipe again to confirm failure
       - I have disabled the recipe for now
       - None, I recommend to wait for next run on periodic scheduling to confirm there is an issue
-      - None, I have no idea of what to do
+      - None, I do not have sufficient rights in Zimfarm but I recommend to request the recipe again to confirm failure
+      - None, I do not have sufficient rights in Zimfarm but I recommend to disable the recipe for now
+      - None, I have no idea of what to do 
   validations:
     required: true
 - type: dropdown
@@ -56,9 +58,10 @@ body:
   attributes:
     label: What's next?
     options:
-      - This can be fixed by content team
-      - This is an upstream scraper problem
-      - This is an upstream website problem
+      - This has to be monitored by content team
+      - This has to be fixed by content team
+      - This has to be fixed by dev team (upstream scraper / zimfarm problem)
+      - This has to be reported to website admin (upstream website problem)
       - I don't know
   validations:
     required: true
