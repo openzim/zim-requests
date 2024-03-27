@@ -1,0 +1,58 @@
+name: ZIM bug
+description: To report an issue with a ZIM published by openZIM (typically on library.kiwix.org)
+title: '<ZIM_name/ZIM_project> is failing'
+labels: ["Bug"]
+body:
+- type: textarea
+  id: zim_urls
+  attributes:
+    label: ZIM(s) location
+    description: Link to the ZIM(s) which have a bug (either on library.kiwix.org or download.kiwix.org)
+    placeholder: https://library.kiwix.org/viewer#gutenberg_mul_all_2023-08
+  validations:
+    required: true
+- type: textarea
+  id: recipe_url
+  attributes:
+    label: Recipe(s) URL
+    description: If known, the Zimfarm recipe(s) which produced this ZIM(s)
+    placeholder: https://farm.openzim.org/pipeline/xxxx
+- type: checkboxes
+  id: readers
+  attributes:
+    label: Readers tested
+    description: On which readers did you tried the ZIM (at least two is recommended)?
+    options:
+      - label: Kiwix-serve on iOS (iPad / iPhone)
+      - label: Kiwix-serve on Android (phone or tablet)
+      - label: Kiwix-serve on Windows
+      - label: Kiwix-serve on Linux
+      - label: Kiwix-serve on Raspberry Pi (e.g. hotspot)
+      - label: Kiwix-serve on Mac
+      - label: pwa.kiwix.org
+      - label: Kiwix JS - Chrome extension
+      - label: Kiwix JS - Firefox extension
+      - label: Kiwix JS - Edge extension
+      - label: Kiwix for Android application
+      - label: Kiwix for MacOS application
+      - label: Kiwix for iOS (iPad/iPhone) application
+- type: dropdown
+  id: zims_produced
+  attributes:
+    label: Both ZIM versions impacted?
+    description: On download.kiwix.org, we store two versions of a single ZIM. Do they both have the issue?
+    options:
+      - Yes, both versions are impacted
+      - No, only last version is impacted
+      - No, only previous version is impacted
+      - There is only one version
+      - I don't know how to test previous version
+  validations:
+    required: true
+- type: textarea
+  id: details
+  attributes:
+    label: Details
+    placeholder: Add details here (screenshots, what is not working, ...)
+  validations:
+    required: true
