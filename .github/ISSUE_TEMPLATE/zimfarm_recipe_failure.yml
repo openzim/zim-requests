@@ -1,5 +1,5 @@
-name: Zimfarm Recipe Issue
-description: To report an issue on a openZIM Zimfarm (farm.openzim.org) recipe
+name: Zimfarm Recipe Failure Issue
+description: To report an issue on a openZIM Zimfarm (farm.openzim.org) failing recipe
 title: '<recipe_name> is failing'
 labels: ["Bug"]
 body:
@@ -8,7 +8,7 @@ body:
   attributes:
     label: Recipe URL
     description: The recipe which encountered a problem
-    placeholder: https://farm.openzim.org/pipeline/xxxx
+    placeholder: https://farm.openzim.org/recipes/xxxx
   validations:
     required: true
 - type: textarea

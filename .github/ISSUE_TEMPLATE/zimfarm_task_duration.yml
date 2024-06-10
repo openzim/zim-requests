@@ -1,0 +1,28 @@
+name: Zimfarm Task Duration Issue
+description: To report an issue on a openZIM Zimfarm (farm.openzim.org) abnormal task duration
+title: 'Last task of <recipe_name> takes too long'
+labels: ["Bug"]
+body:
+- type: input
+  id: recipe_url
+  attributes:
+    label: Recipe URL
+    description: The recipe which encountered a problem
+    placeholder: https://farm.openzim.org/recipes/xxxx
+  validations:
+    required: true
+- type: input
+  id: task_url
+  attributes:
+    label: Task URL
+    description: The task which takes too long to complete
+    placeholder: https://farm.openzim.org/pipeline/xxxx
+  validations:
+    required: true
+- type: textarea
+  id: details
+  attributes:
+    label: Details
+    placeholder: Share details about why you consider task duration abnormal
+  validations:
+    required: true

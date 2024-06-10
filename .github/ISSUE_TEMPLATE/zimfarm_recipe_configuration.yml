@@ -1,0 +1,18 @@
+name: Zimfarm Recipe Configuration Issue
+description: To report an issue on improper configuration of a openZIM Zimfarm (farm.openzim.org) recipe
+title: '<recipe_name> configuration is incorrect'
+labels: ["Bug"]
+body:
+- type: input
+  id: recipe_url
+  attributes:
+    label: Recipe URL
+    description: The recipe which is improperly configured
+    placeholder: https://farm.openzim.org/recipes/xxxx
+  validations:
+    required: true
+- type: textarea
+  id: details
+  attributes:
+    label: What is wrong
+    placeholder: Add here more details about what should be fixed
