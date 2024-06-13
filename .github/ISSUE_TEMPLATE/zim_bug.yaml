@@ -1,6 +1,6 @@
 name: ZIM bug
 description: To report an issue with a ZIM published by openZIM (typically on library.kiwix.org)
-title: '<ZIM_name/ZIM_project> is failing'
+title: '<ZIM_name/ZIM_project> is not working properly'
 labels: ["Bug"]
 body:
 - type: textarea
@@ -39,14 +39,14 @@ body:
 - type: dropdown
   id: zims_produced
   attributes:
-    label: Both ZIM versions impacted?
-    description: On download.kiwix.org, we store two versions of a single ZIM. Do they both have the issue?
+    label: Which ZIM versions are impacted?
+    description: On download.kiwix.org, we store at least two versions of a single ZIM. Do they both have the issue?
     options:
-      - Yes, both versions are impacted
-      - No, only last version is impacted
-      - No, only previous version is impacted
-      - There is only one version
-      - I don't know how to test previous version
+      - All PROD versions are impacted
+      - Only last PROD version is impacted
+      - There is only PROD one version which is impacted
+      - Only last DEV version is impacted
+      - I don't know
   validations:
     required: true
 - type: textarea
