@@ -1,0 +1,68 @@
+name: Quarterly recipe maintenance tasks
+
+on:
+  schedule:
+    - cron: "8 0 1 */3 *"
+
+jobs:
+  job:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Create periodic recipe maintenance issue
+      shell: python
+      run: |
+        import datetime
+        import math
+        import os
+        import re
+        import sys
+
+        import requests
+
+        quarter = math.ceil(datetime.date.today().month/3.)
+
+        payload = {
+            "title": f"Q{quarter} Recipes Maintenance",
+            "body": os.getenv("ISSUE_BODY"),
+            "labels": re.sub(r"\s", "", os.getenv("LABELS", "")).split(",") or None,
+            "assignees": re.sub(r"\s", "", os.getenv("ASSIGNEES", "")).split(",") or None,
+        }
+        api_url = f"https://api.github.com/repos/{os.getenv('REPO')}/issues"
+        url = f"https://github.com/{os.getenv('REPO')}/issues"
+        headers = {
+            "Accept": "application/vnd.github.v3+json",
+            "Authorization": f"token {os.getenv('ACCESS_TOKEN')}",
+        }
+        resp = requests.get(api_url, headers=headers)
+        if resp.status_code != 200:
+            print(f"❌ Couldn't retrieve issues for {url} using {api_url}.")
+            print(f"HTTP {resp.status_code} {resp.reason} - {resp.text}")
+            print("Check your `ACCESS_TOKEN` secret.")
+            sys.exit(1)
+        resp = requests.post(api_url, headers=headers, json=payload)
+        if resp.status_code != 201:
+            print(f"❌ Couldn't create issue for {url}")
+            print(f"HTTP {resp.status_code} {resp.reason} - {resp.text}")
+            sys.exit(1)
+        print(f"✅ Issue successfully created at {url}/{resp.json().get('number')}")
+        sys.exit(0)
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        REPO: kiwix/k8s
+        LABELS: recovery
+        ASSIGNEES: benoit74
+        ISSUE_BODY: |
+ 
+          In order to maintain Zimfarm recipes up-to-date, some manual actions are needed.
+          
+          This ticket requests the assignees to perform following tasks.
+
+          ### TED 
+          
+          - [ ] Update (add / delete) the list of TED recipes per topic, including necessary ZIM deletion requests
+          - [ ] Update the list of topics in https://farm.openzim.org/recipes/ted_topic_all (until https://github.com/openzim/ted/issues/213 is solved)
+
+          See https://github.com/openzim/zimfarm/blob/main/dispatcher/backend/maint-scripts/create_ted_topics_recipes.py (which is not yet handling topic deletions, not seen in the wild)
+
+          **Note**: this is an *automatic reminder* intended for the assignee(s).
+
