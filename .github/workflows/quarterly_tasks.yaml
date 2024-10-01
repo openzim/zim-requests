@@ -8,6 +8,8 @@ on:
 jobs:
   job:
     runs-on: ubuntu-22.04
+    permissions:
+      issues: write
     steps:
     - name: Create periodic recipe maintenance issue
       shell: python
@@ -48,7 +50,7 @@ jobs:
         print(f"✅ Issue successfully created at {url}/{resp.json().get('number')}")
         sys.exit(0)
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         REPO: openzim/zim-requests
         LABELS: recovery
         ASSIGNEES: benoit74
