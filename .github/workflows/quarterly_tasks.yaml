@@ -25,7 +25,7 @@ jobs:
         quarter = math.ceil(datetime.date.today().month/3.)
 
         payload = {
-            "title": f"Q{quarter} Recipes Maintenance",
+            "title": f"Q{quarter} {datetime.datetime.now().strftime('%Y')} Recipes Maintenance",
             "body": os.getenv("ISSUE_BODY"),
             "labels": re.sub(r"\s", "", os.getenv("LABELS", "")).split(",") or None,
             "assignees": re.sub(r"\s", "", os.getenv("ASSIGNEES", "")).split(",") or None,
@@ -61,11 +61,22 @@ jobs:
           This ticket requests the assignees to perform following tasks.
 
           ### TED 
-          
+
+          See https://github.com/openzim/zimfarm/blob/main/dispatcher/backend/maint-scripts/create_ted_topics_recipes.py 
+
+          Typical usage:
+          ```
+          # setup proper optim cache URL
+           export TED_OPTIM_CACHE_URL="https://s3.us-west-1.wasabisys.com/..." 
+          # setup credentials to your user with at least editor rights
+           export ZF_USER="..."
+           export ZF_PWD="..."
+          python maint-scripts/create_ted_topics_recipes.py $ZF_USER $ZF_PWD 
+          ```
+
           - [ ] Update (add / delete) the list of TED recipes per topic, including necessary ZIM deletion requests
           - [ ] Update the list of topics in https://farm.openzim.org/recipes/ted_topic_all (until https://github.com/openzim/ted/issues/213 is solved)
-
-          See https://github.com/openzim/zimfarm/blob/main/dispatcher/backend/maint-scripts/create_ted_topics_recipes.py (which is not yet handling topic deletions, not seen in the wild)
+          - [ ] Once new recipes have completed (they will automatically be started by periodic scheduler after at most one hour), check their ZIM and then move them to prod
 
           **Note**: this is an *automatic reminder* intended for the assignee(s).
 
