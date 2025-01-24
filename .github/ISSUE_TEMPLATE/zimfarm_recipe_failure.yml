@@ -63,6 +63,7 @@ body:
       - This has to be fixed by dev team (upstream scraper / zimfarm problem)
       - This has to be reported to website admin (upstream website problem)
       - I don't know
+      - Other, see below
   validations:
     required: true
 - type: textarea
