@@ -62,8 +62,10 @@ jobs:
           Procedure details are at https://github.com/openzim/zim-requests/wiki/Maintain-Zimfarm-recipes
           
           Checklist:
-          - [x] recipesauto ran (and modifications applied) on ted
-          - [x] `ted_topic_all` updated manually if neeed
-          - [x] recipesauto ran (and modifications applied) on devdocs
-          - [x] recipesauto ran (and modifications applied) on freecodecamp
+          - [ ] recipesauto ran (and modifications applied) on ted
+          - [ ] `ted_topic_all` updated manually if neeed
+          - [ ] recipesauto ran (and modifications applied) on devdocs
+          - [ ] recipesauto ran (and modifications applied) on freecodecamp
+          - [ ] recipesauto ran (and modifications applied) on shamela
+          - [ ] recipesauto ran (and modifications applied) on phet
           
