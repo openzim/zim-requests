@@ -68,4 +68,5 @@ jobs:
           - [ ] recipesauto ran (and modifications applied) on freecodecamp
           - [ ] recipesauto ran (and modifications applied) on shamela
           - [ ] recipesauto ran (and modifications applied) on phet
+          - [ ] recipesauto ran (and modifications applied) on gutenberg
           
