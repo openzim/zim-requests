@@ -16,4 +16,4 @@ assignees: ''
 - Desired ZIM Icon –png (URL or attach one): https://example.com/example_icon.png
 - Language (ISO 639-3): **abc**
 - Is this a MediaWiki?: **yes | no**
-- Are you the owner/admin of the webiste (in case we need IP whitelisting)?: **yes/no**
+- Are you the owner/admin of the website (in case we need IP whitelisting)?: **yes/no**
