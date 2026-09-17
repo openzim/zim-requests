@@ -1,7 +1,7 @@
 ---
-name: New Request
+name: New ZIM Request
 about: To suggest a new ZIM creation
-title: 'New request: '
+title: 'New ZIM request: '
 labels: ''
 assignees: ''
 
