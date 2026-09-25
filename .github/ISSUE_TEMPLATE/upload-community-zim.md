@@ -7,13 +7,18 @@ assignees: ''
 
 ---
 
+*Please first create a user account on https://cms.openzim.org/ and follow process on https://wiki.openzim.org/wiki/Contribute_a_ZIM_file *
+
 *Please use the following format for a community ZIM upload request*
 
+- Your CMS user account: 
 - Original Website URL: **https://xxx or equivalent**
 - License: **Creative Commons | Public domain | ...** (do NOT request copyrighted material)
-- Scraper or tool used: **if standard openZIM scraper or tool**
+- Scraper or tool used: **informative, if standard openZIM scraper or tool**
 
 *For each title (group of ZIM sharing the same ZIM name), provide*
 - ZIM Name: **Must match our convention at https://wiki.openzim.org/wiki/Content_team/ZIM_Naming_Convention**
 - ZIM Flavours: **(if any)**
 - Languages (ISO 639-3): **abc**
+
+*Kiwix/openZIM team will keep you posted once you can upload your ZIM*
