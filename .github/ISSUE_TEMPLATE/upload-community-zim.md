@@ -2,7 +2,7 @@
 name: Upload community ZIM
 about: To suggest uploading a ZIM you've created to the community
 title: 'Upload commmunity ZIM: '
-labels: 'Contrib'
+labels: Contrib
 assignees: ''
 
 ---
@@ -15,7 +15,7 @@ assignees: ''
   - **Your CMS user account ID** (click on your name in the top-right box then "copy User ID")
 - [ ] Original Website(s) URL
   - **https://xxx or equivalent**
-- [ ] Content is legal in Switzerland
+- [ ] Content is legal in Switzerland (e.g. no glorification of violence, animal/child pornography, slander, hate speech, and privacy violations)
 - [ ] Content does not advertise fringe theory
 - [ ] Content is free content or open content or educational content with authorization for reproduction
    - License: **Creative Commons | Public domain | ...**
