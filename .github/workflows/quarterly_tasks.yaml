@@ -69,4 +69,9 @@ jobs:
           - [ ] recipesauto ran (and modifications applied) on shamela
           - [ ] recipesauto ran (and modifications applied) on phet
           - [ ] recipesauto ran (and modifications applied) on gutenberg
+          - [ ] recipesauto ran (and modifications applied) on onemorelibrary
+          - [ ] recipesauto ran (and modifications applied) on open-textbook-library
+          - [ ] recipesauto ran (and modifications applied) on wikisource
+          - [ ] recipesauto ran (and modifications applied) on stackexchange
+          - [ ] recipesauto ran (and modifications applied) on maps
           
